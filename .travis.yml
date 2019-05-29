@@ -6,4 +6,4 @@ before_install:
   - docker build -t njpx/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run njpx/docker-react npm run test -- --coverage
+  - docker run njpx/docker-react npm run test --watchAll=false --coverage
