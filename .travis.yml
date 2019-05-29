@@ -3,7 +3,7 @@ services:
     - docker
 
 before_install:
-  - dcoker build -t njpx/docker-react -f Dockerfile.dev .
+  - docker build -t njpx/docker-react -f Dockerfile.dev .
 
 script:
   - docker run njpx/docker-react npm run test -- --coverage
